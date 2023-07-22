@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container my-5">
+        <label for="markName" class="ps-2">Bookmark Name</label>
+        <input type="text" class="form-control my-3" placeholder="Enter name of bookmark" id="markName">
+        <label for="markLink" class="ps-2">Bookmark Link</label>
+        <input type="text" class="form-control my-3" placeholder="Enter bookmark link" id="markLink" pattern="(https|http):(\/\/)www.[a-zA-Z0-9]{3,}.com">
+        <p id="p1"></p>
+        <button onclick="getProducts()" class="btn btn-danger">Add bookmark</button>
+    </div>
+
+
+
+    <div class="container">
+        <table class="table table-hover">
+            <thead class="text-center">
+                <th>id</th>
+                <th>bookMark name</th>
+                <th >bookMark link</th>
+            </thead>
+            <tbody id="demo" class="text-center">
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
